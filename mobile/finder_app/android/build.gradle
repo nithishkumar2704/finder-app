@@ -1,0 +1,48 @@
+buildscript {
+    ext.kotlin_version = '1.9.10'
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    project.ext {
+        compileSdkVersion = 35
+        minSdkVersion = 21
+        targetSdkVersion = 35
+        ndkVersion = "26.1.10909125"
+    }
+    
+    // Provide 'flutter' property to plugins safely
+    if (it.name != 'app') {
+        it.ext.flutter = [
+            compileSdkVersion: 35,
+            minSdkVersion: 21,
+            targetSdkVersion: 35,
+            ndkVersion: "26.1.10909125"
+        ]
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

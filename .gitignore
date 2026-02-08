@@ -1,0 +1,21 @@
+# Project-wide gitignore
+
+# Environment files
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Documentation artifacts
+*.pdf
