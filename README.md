@@ -1,4 +1,4 @@
-# 🔍 Finder App - Lost & Found Item Tracker
+# Finder App - Lost & Found Item Tracker
 
 A full-stack mobile application that helps people find their lost items and return found items to their rightful owners through location-based search, real-time chat, and admin-moderated claim verification.
 
@@ -6,35 +6,35 @@ A full-stack mobile application that helps people find their lost items and retu
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-## ✨ Features
+## Features
 
-### 🔐 User Authentication
+### User Authentication
 - JWT-based authentication
 - Secure token storage
 - User profiles with reputation scores
 
-### 📱 Item Management
+### Item Management
 - Post lost or found items with images
 - Category-based organization
 - Location-based search (Haversine formula)
 - Status tracking: Posted → Claimed → Verified → Returned
 
-### 💬 Real-time Chat
+### Real-time Chat
 - WebSocket-powered messaging (Django Channels)
 - Direct communication between finders and owners
 - Message persistence and read receipts
 
-### ✅ Claim Verification
+### Claim Verification
 - Submit claims with proof
 - Admin moderation system
 - Verification workflow
 
-### 🗺️ Location Services
+### Location Services
 - Nearby items search
 - Map integration
 - Address geocoding
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Framework**: Django 5.0.1 + Django REST Framework
@@ -52,7 +52,7 @@ A full-stack mobile application that helps people find their lost items and retu
 - **Maps**: google_maps_flutter
 - **Location**: geolocator
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.11+
@@ -176,7 +176,7 @@ finder-app/
         └── pubspec.yaml
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/accounts/register/` - Register new user
@@ -204,7 +204,7 @@ finder-app/
 - `GET /api/admin/claims/pending/` - Pending claims (admin)
 - `POST /api/admin/claims/{id}/verify/` - Verify claim (admin)
 
-## 🚀 Deployment
+## Deployment
 
 ### Backend (Django)
 - Use Gunicorn + Nginx for production
@@ -219,19 +219,19 @@ finder-app/
 - Configure app signing for production
 - Update API endpoints to production URLs
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
-## 👤 Author
+## Author
 
-Your Name - [GitHub Profile](https://github.com/yourusername)
+Nithish Kumar B (https://github.com/nithishkumar2704)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Django REST Framework for the powerful API toolkit
 - Flutter team for the amazing cross-platform framework
