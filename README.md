@@ -65,7 +65,7 @@ A full-stack mobile application that helps people find their lost items and retu
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/finder-app.git
+   git clone https://github.com/nithishkumar2704/finder-app.git
    cd finder-app/backend
    ```
 
